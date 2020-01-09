@@ -1,0 +1,13 @@
+<body>
+    <link rel="stylesheet" href="../css/main.css">
+    <h1>
+        <a href="/index.html">⌘</a> /
+        {% for parentfolders %}
+            <a href={{indexpath}}>{{foldername}}</a> / 
+        {% endfor %}
+        {{name}}
+    </h1>
+    <h1>{{name}}(<a href={{link}}>Edit</a>)</h1>
+    <div class="byline">by Sakuk3</div>
+    {{content}}
+</body>

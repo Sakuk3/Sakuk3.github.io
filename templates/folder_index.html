@@ -1,0 +1,26 @@
+<body>
+    <h1>
+        <a href="../index.html">⌘</a> / 
+        {% for parentfolders %}
+            <a href={{indexpath}}>{{foldername}}</a> /
+        {% endfor %}
+        {{foldername}}
+    </h1>
+    <ul>
+        {% for folders %}
+            <li><a href={{folderindexpath}}>{{foldername}}</a></li>
+        {% endfor %}
+
+        {% if folders %}
+            <hr>
+        {% endif %}
+
+        {% for posts %}
+            <li><a href={{postpath}}>{{postname}}</a></li>
+        {% endfor %}
+
+        {% if posts %}
+            <hr>
+        {% endif %}
+    </ul>
+</body>
